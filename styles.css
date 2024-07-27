@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #a4cef8, #c2c9d1);
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(5, 39, 58);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    font-weight: bold;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 500ms linear;
+}
+
+button:hover {
+    background: #0056b3;
+    transition: 500ms linear;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.icon {
+    font-size: 120%;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #0056b3;
+}
+
+.footer {
+    display: block;
+    position: fixed;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    left: 10px;
+    bottom: 5px;
+    right: 10px;
+    width: 206vh;
+    background-color: rgb(5, 39, 58);
+    color: white;
+    text-align: center;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    margin-left: 10px;
+    background: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.fa-linkedin {
+    padding-inline: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+    background: #1492f2;
+    color: rgb(15, 14, 14);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500vh) {
+    .footer {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
